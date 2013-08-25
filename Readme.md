@@ -2,7 +2,7 @@ Bitcoin-Trading-bot
 ===================
 
 A bitcoin trading bot that is more of framework than a full bot.
-For support contact: (https://bitcointalk.org/index.php?topic=281135)[https://bitcointalk.org/index.php?topic=281135]
+For support contact: [https://bitcointalk.org/index.php?topic=281135](https://bitcointalk.org/index.php?topic=281135)
 
 Donations
 ===================
