@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.MathContext;
 
-import apis.ANXapi;
 import apis.Btceapi;
 
 import models.LastTrade;
@@ -29,7 +28,7 @@ public class configurationfile {
 			JSONObject lasttrade=jo.getJSONObject("Last Trade");
 			settings.lasttrade=new LastTrade(lasttrade.getString("Type").toLowerCase(), new BigDecimal(lasttrade.getDouble("Trade")));
 			if(jo.has("API Key") && jo.has("API Secret")){
-				settings.market=new ANXapi(jo.getString("API Key"), jo.getString("API Secret"));
+				settings.market=new Btceapi(jo.getString("API Key"), jo.getString("API Secret"));
 				key=jo.getString("API Key");
 				secret=jo.getString("API Secret");
 			}else{

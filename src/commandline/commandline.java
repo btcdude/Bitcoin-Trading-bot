@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Timer;
 
 import strategies.ExampleStrategy;
-import strategies.ExampleStrategy2;
 import timertask.UpdateMarketData;
 import utils.CalutationsUtils;
 /*
@@ -33,6 +32,6 @@ public class commandline {
 	}
 	//Add your strategy in the same way of the Example Strategy
 	private static void addStrategies(){
-		timer.schedule(new ExampleStrategy2(), CalutationsUtils.secondsToMilliseconds(5), CalutationsUtils.secondsToMilliseconds(5));
+		timer.schedule(new ExampleStrategy(), CalutationsUtils.secondsToMilliseconds(25), CalutationsUtils.secondsToMilliseconds(10));		
 	}
 }
